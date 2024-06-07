@@ -18,7 +18,7 @@ $$ Ĥ~\Phi(\mathbf{\vec{r}})=E~\Phi(\mathbf{\vec{r}})$$
 > __NOTA:(Del curso de _[Computational Materials Physics](https://www.compmatphys.org/)_ )__ <br>Se conoce como Ab Initio o primeros principios a los estudios de la naturaleza basandose en ecuaciones fundamentales (e irreductibles) que describen completamente al sistema estudiad. Por ejemplo, en mecánica clásica, usar las ecuaciones de Newton se consideraría un estudi Ab Initio. En este aspecto, se trata de evitar modelos que simplifiquen en desmedida al sistema a estudiar.
 
 Ahora consideremos un sistema de cargas negativas y positivas (por ejemplo, una molécula de N nucleos y M electrones), su ecuación de Schrödinger está dada por:
-$$ Ĥ~\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})= \left( \sum_{A}^{N}\frac{\hbar^2}{2M_A} \nabla_A^2 + \frac{\hbar^2}{2m}\sum_i^M\nabla_i^2+\sum_i^N \sum_{j<i}^N\frac{1}{r_{ij}}+\sum_A^M \sum_{B<A}^M\frac{Z_AZ_B}{r_{AB}}+\sum_i^N \sum_{A}^M\frac{Z_A}{|R_A-r_i|} \right)\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})=E\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})$$
+$$ Ĥ~\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})= \left( \sum_{A}^{N}\frac{\hbar^2}{2M_A} \nabla_A^2 + \frac{\hbar^2}{2m}\sum_i^M\nabla_i^2+\sum_i^N \sum_{j<i}^N\frac{1}{r_{ij}}+\sum_A^M \sum_{B<A}^M\frac{Z_AZ_B}{r_{AB}}+\sum_i^N \sum_{A}^M\frac{Z_A}{|R_A-r_i|} \right)\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})=E\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}}) $$
 
 Los primeros 2 términos se refieren a la energía cinética de las cargas ($Z_A$ se refiere al número de cargas positivas en los núcleos atómicos). Las letras mayusculas hacen referencia a las cargas postivas y las minúsculas a las cargas negativas.
 
