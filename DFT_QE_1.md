@@ -13,12 +13,12 @@ En mecánica cuántica, la ecuación que gobierna el compotamiento de las partí
 $$Ĥ~\Psi(\mathbf{\vec{r}},t)=\frac{d\Psi}{dt}(\mathbf{\vec{r}},t)$$
 
 Normalmente se trabaja la ecuación de Schrödinger independiente del tiempo, debido a que el estado base del sistema es independiente del tiempo, donde el autovalor del operador de Hamilton, $Ĥ$, es la energía del sistema:
-$$ Ĥ~\Phi(\mathbf{\vec{r}})=E~\Phi(\mathbf{\vec{r}})$$
+$$Ĥ~\Phi(\mathbf{\vec{r}})=E~\Phi(\mathbf{\vec{r}})$$
 
 > __NOTA:(Del curso de _[Computational Materials Physics](https://www.compmatphys.org/)_ )__ <br>Se conoce como Ab Initio o primeros principios a los estudios de la naturaleza basandose en ecuaciones fundamentales (e irreductibles) que describen completamente al sistema estudiad. Por ejemplo, en mecánica clásica, usar las ecuaciones de Newton se consideraría un estudi Ab Initio. En este aspecto, se trata de evitar modelos que simplifiquen en desmedida al sistema a estudiar.
 
 Ahora consideremos un sistema de cargas negativas y positivas (por ejemplo, una molécula de N nucleos y M electrones), su ecuación de Schrödinger está dada por:
-$$ Ĥ~\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})= \left( \sum_{A}^{N}\frac{\hbar^2}{2M_A} \nabla_A^2 + \frac{\hbar^2}{2m}\sum_i^M\nabla_i^2+\sum_i^N \sum_{j<i}^N\frac{1}{r_{ij}}+\sum_A^M \sum_{B<A}^M\frac{Z_AZ_B}{r_{AB}}+\sum_i^N \sum_{A}^M\frac{Z_A}{|R_A-r_i|} \right)\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})=E\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}}) $$
+$$Ĥ~\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})= \left( \sum_{A}^{N}\frac{\hbar^2}{2M_A} \nabla_A^2 + \frac{\hbar^2}{2m}\sum_i^M\nabla_i^2+\sum_i^N \sum_{j<i}^N\frac{1}{r_{ij}}+\sum_A^M \sum_{B<A}^M\frac{Z_AZ_B}{r_{AB}}+\sum_i^N \sum_{A}^M\frac{Z_A}{|R_A-r_i|} \right)\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})=E\Phi(\mathbf{\vec{r}},\mathbf{\vec{R}})$$
 
 Los primeros 2 términos se refieren a la energía cinética de las cargas ($Z_A$ se refiere al número de cargas positivas en los núcleos atómicos). Las letras mayusculas hacen referencia a las cargas postivas y las minúsculas a las cargas negativas.
 
@@ -26,7 +26,7 @@ Los primeros 2 términos se refieren a la energía cinética de las cargas ($Z_A
 
 En general, podriamos considerar que las cargas positivas (en muchos casos compouestas por protones y neutrones agrupados en nucleos atómicos mediante la fuerza fuerte) se mueven a una velocidad mucho menor que las cargas negativas (electrones) debido a que poseen una masa mucho mayor. Esto implica que en el tiempo en el que las cargas positivas cambian de estado, las cargas negativas ya se han reconfigurado a su nuevo estado; entonces para un dado periodo de tiempo lo sificientemente pequeño podemos considerar la energía cinética de las cargas positivas como una constante (es decir, que tienen una posición fija); al igual que el potencial debido a la atracción entre las cargas positivas. Con esto podemos escribir el Hamiltoniano electrónico que solo toma en cuenta a la enerǵia cinética de los electrones, su potencial de atracción entre los electrones y el potencial:
 
-$$  Ĥ_e~\Phi_e(\mathbf{\vec{r}},\mathbf{\vec{R}})= \left( \frac{\hbar^2}{2m}\sum_i^M\nabla_i^2+\sum_i^N \sum_{j<i}^N\frac{1}{r_{ij}}+\sum_i^N \sum_{A}^M\frac{Z_A}{|\mathbf{\vec{R}_A-\vec{r}_i}|} \right)\Phi_e(\mathbf{\vec{r}},\mathbf{\vec{R}})=E_e\Phi_e(\mathbf{\vec{r}},\mathbf{\vec{R}})$$
+$$Ĥ_e~\Phi_e(\mathbf{\vec{r}},\mathbf{\vec{R}})= \left( \frac{\hbar^2}{2m}\sum_i^M\nabla_i^2+\sum_i^N \sum_{j<i}^N\frac{1}{r_{ij}}+\sum_i^N \sum_{A}^M\frac{Z_A}{|\mathbf{\vec{R}_A-\vec{r}_i}|} \right)\Phi_e(\mathbf{\vec{r}},\mathbf{\vec{R}})=E_e\Phi_e(\mathbf{\vec{r}},\mathbf{\vec{R}})$$
 $$Ĥ=E_e+V_{ext}$$
 $$E_e=T_e+V_e $$
 
